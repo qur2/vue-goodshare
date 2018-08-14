@@ -2,7 +2,12 @@
   "name": "vue-goodshare",
   "version": "0.9.4",
   "description": "Vue.js component for social share. A simple way to share a link on the pages of your website in the most popular (and not so) social networks.",
-  "main": "src/VueGoodshare.vue",
+  "main": "dist/vue-goodshare.umd.js",
+  "module": "dist/vue-goodshare.esm.js",
+  "unpkg": "dist/vue-goodshare.min.js",
+  "browser": {
+    "./sfc": "src/VueGoodshare.vue"
+  },
   "scripts": {
     "build": "npx vue-cli-service build --target lib --name vue-goodshare ./src/VueGoodshare.vue",
     "docs:prepare": "gitbook install ./src/docs",
