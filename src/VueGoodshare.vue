@@ -27,24 +27,7 @@
 </template>
 
 <script>
-  // Import VueGoodshare social network components
-  import VueGoodshareVkontakte from "./providers/Vkontakte.vue"
-  import VueGoodshareOdnoklassniki from "./providers/Odnoklassniki.vue"
-  import VueGoodshareFacebook from "./providers/Facebook.vue"
-  import VueGoodshareGooglePlus from "./providers/GooglePlus.vue"
-  import VueGoodshareMoiMir from "./providers/MoiMir.vue"
-  import VueGoodshareTwitter from "./providers/Twitter.vue"
-  import VueGoodshareLiveJournal from "./providers/LiveJournal.vue"
-  import VueGoodshareLinkedIn from "./providers/LinkedIn.vue"
-  import VueGoodshareTumblr from "./providers/Tumblr.vue"
-  import VueGoodsharePinterest from "./providers/Pinterest.vue"
-  import VueGoodshareReddit from "./providers/Reddit.vue"
-  
-  // Import VueGoodshare mobile messenger components
-  import VueGoodshareTelegram from "./providers/Telegram.vue"
-  import VueGoodshareViber from "./providers/Viber.vue"
-  import VueGoodshareWhatsApp from "./providers/WhatsApp.vue"
-  import VueGoodshareLine from "./providers/Line.vue"
+  import providers from './providers'
   
   export default {
     name: 'VueGoodshare',
@@ -54,22 +37,6 @@
         default: 'world'
       }
     },
-    components: {
-      VueGoodshareVkontakte,
-      VueGoodshareOdnoklassniki,
-      VueGoodshareFacebook,
-      VueGoodshareGooglePlus,
-      VueGoodshareMoiMir,
-      VueGoodshareLiveJournal,
-      VueGoodshareLinkedIn,
-      VueGoodshareTumblr,
-      VueGoodsharePinterest,
-      VueGoodshareReddit,
-      VueGoodshareTwitter,
-      VueGoodshareTelegram,
-      VueGoodshareViber,
-      VueGoodshareWhatsApp,
-      VueGoodshareLine
-    }
+    components: providers
   }
 </script>

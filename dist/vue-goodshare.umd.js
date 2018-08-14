@@ -390,12 +390,12 @@ __webpack_require__.r(__webpack_exports__);
 // EXTERNAL MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 var setPublicPath = __webpack_require__("1eb2");
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47426207-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VueGoodshare.vue?vue&type=template&id=52339aa6&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47426207-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VueGoodshare.vue?vue&type=template&id=0fd28724&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[(this.$props.bundle === 'world')?_c('div',[_c('vue-goodshare-facebook',{attrs:{"has_icon":"","has_counter":"","title_social":"Facebook"}}),_c('vue-goodshare-linked-in',{attrs:{"has_icon":"","has_counter":"","title_social":"LinkedIn"}}),_c('vue-goodshare-tumblr',{attrs:{"has_icon":"","has_counter":"","title_social":"Tumblr"}}),_c('vue-goodshare-pinterest',{attrs:{"has_icon":"","has_counter":"","title_social":"Pinterest"}}),_c('vue-goodshare-reddit',{attrs:{"has_icon":"","has_counter":"","title_social":"Reddit"}}),_c('vue-goodshare-twitter',{attrs:{"has_icon":"","title_social":"Twitter"}}),_c('vue-goodshare-google-plus',{attrs:{"has_icon":"","title_social":"Google Plus"}})],1):_vm._e(),(this.$props.bundle === 'ru')?_c('div',[_c('vue-goodshare-vkontakte',{attrs:{"has_icon":"","has_counter":"","title_social":"Вконтакте"}}),_c('vue-goodshare-odnoklassniki',{attrs:{"has_icon":"","has_counter":"","title_social":"Одноклассники"}}),_c('vue-goodshare-facebook',{attrs:{"has_icon":"","has_counter":"","title_social":"Фейсбук"}}),_c('vue-goodshare-moi-mir',{attrs:{"has_icon":"","has_counter":"","title_social":"Мой Мир"}}),_c('vue-goodshare-twitter',{attrs:{"has_icon":"","title_social":"Твиттер"}}),_c('vue-goodshare-live-journal',{attrs:{"has_icon":"","title_social":"Живой Журнал"}})],1):_vm._e(),(this.$props.bundle === 'mobile')?_c('div',[_c('vue-goodshare-telegram',{attrs:{"has_icon":"","title_social":"Telegram"}}),_c('vue-goodshare-viber',{attrs:{"has_icon":"","title_social":"Viber"}}),_c('vue-goodshare-whats-app',{attrs:{"has_icon":"","title_social":"WhatsApp"}}),_c('vue-goodshare-line',{attrs:{"has_icon":"","title_social":"LINE"}})],1):_vm._e()])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/VueGoodshare.vue?vue&type=template&id=52339aa6&
+// CONCATENATED MODULE: ./src/VueGoodshare.vue?vue&type=template&id=0fd28724&
 
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"47426207-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/providers/Vkontakte.vue?vue&type=template&id=8fd59fd0&scoped=true&
 var Vkontaktevue_type_template_id_8fd59fd0_scoped_true_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('a',{staticClass:"button-social",class:_vm.buttonSocialDesignObject,attrs:{"page-url":_vm.page_url,"page-title":_vm.page_title,"page-description":_vm.page_description,"page-image":_vm.page_image,"button-design":_vm.button_design,"title-social":_vm.title_social,"has-square-edges":_vm.has_square_edges,"has-icon":_vm.has_icon,"has-counter":_vm.has_counter},on:{"click":function($event){$event.preventDefault();return _vm.showShareWindow($event)}}},[(this.$props.has_icon)?_c('i',{staticClass:"icon-vkontakte"}):_vm._e(),(this.$props.title_social)?_c('span',{staticClass:"title-social"},[_vm._v(_vm._s(_vm.title_social))]):_vm._e(),(this.$props.has_counter)?_c('span',{staticClass:"counter-vkontakte",model:{value:(_vm.counter_vkontakte),callback:function ($$v) {_vm.counter_vkontakte=$$v},expression:"counter_vkontakte"}},[_vm._v(_vm._s(_vm.counter_vkontakte))]):_vm._e()])}
@@ -2659,6 +2659,41 @@ var Line_component = normalizeComponent(
 
 Line_component.options.__file = "Line.vue"
 /* harmony default export */ var Line = (Line_component.exports);
+// CONCATENATED MODULE: ./src/providers/index.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* harmony default export */ var providers = ({
+  VueGoodshareVkontakte: Vkontakte,
+  VueGoodshareOdnoklassniki: Odnoklassniki,
+  VueGoodshareFacebook: Facebook,
+  VueGoodshareGooglePlus: GooglePlus,
+  VueGoodshareMoiMir: MoiMir,
+  VueGoodshareTwitter: Twitter,
+  VueGoodshareLiveJournal: LiveJournal,
+  VueGoodshareLinkedIn: LinkedIn,
+  VueGoodshareTumblr: Tumblr,
+  VueGoodsharePinterest: Pinterest,
+  VueGoodshareReddit: Reddit,
+  VueGoodshareTelegram: Telegram,
+  VueGoodshareViber: Viber,
+  VueGoodshareWhatsApp: WhatsApp,
+  VueGoodshareLine: Line
+});
+
 // CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/VueGoodshare.vue?vue&type=script&lang=js&
 //
 //
@@ -2689,23 +2724,6 @@ Line_component.options.__file = "Line.vue"
 //
 //
 
-// Import VueGoodshare social network components
-
-
-
-
-
-
-
-
-
-
-
-
-// Import VueGoodshare mobile messenger components
-
-
-
 
 
 /* harmony default export */ var VueGoodsharevue_type_script_lang_js_ = ({
@@ -2716,23 +2734,7 @@ Line_component.options.__file = "Line.vue"
       default: 'world'
     }
   },
-  components: {
-    VueGoodshareVkontakte: Vkontakte,
-    VueGoodshareOdnoklassniki: Odnoklassniki,
-    VueGoodshareFacebook: Facebook,
-    VueGoodshareGooglePlus: GooglePlus,
-    VueGoodshareMoiMir: MoiMir,
-    VueGoodshareLiveJournal: LiveJournal,
-    VueGoodshareLinkedIn: LinkedIn,
-    VueGoodshareTumblr: Tumblr,
-    VueGoodsharePinterest: Pinterest,
-    VueGoodshareReddit: Reddit,
-    VueGoodshareTwitter: Twitter,
-    VueGoodshareTelegram: Telegram,
-    VueGoodshareViber: Viber,
-    VueGoodshareWhatsApp: WhatsApp,
-    VueGoodshareLine: Line
-  }
+  components: providers
 });
 
 // CONCATENATED MODULE: ./src/VueGoodshare.vue?vue&type=script&lang=js&
