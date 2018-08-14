@@ -9,7 +9,9 @@
     "./sfc": "src/VueGoodshare.vue"
   },
   "scripts": {
-    "build": "npx vue-cli-service build --target lib --name vue-goodshare ./src/VueGoodshare.vue",
+    "build": "npm run build:main && npm run build:providers",
+    "build:main": "npx vue-cli-service build --target lib --name vue-goodshare ./src/VueGoodshare.vue",
+    "build:providers": "ls src/providers/*.vue | xargs -L1 sh -c 'npx vue-cli-service build --no-clean --target lib --name providers/$(basename $1 .vue) $1' dummy",
     "docs:prepare": "gitbook install ./src/docs",
     "docs:build": "npm run docs:prepare && rm -rf ./docs/* && rm -rf ./src/docs/_book && gitbook build ./src/docs && cp -rf ./src/docs/_book/* ./docs",
     "docs:watch": "npm run docs:prepare && gitbook serve ./src/docs"
